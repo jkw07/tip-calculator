@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 24px;
+    background-color: var(--Light-grayish-cyan);
+    font-family: Space Mono, Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.logo {
+    margin: auto;
+    display: block;
+    padding: 3.1rem 0 2.6rem 0;
+}
+
+form {
+    background-color: white;
+    border-radius: 5% 5% 0 0;
+    padding: 1.5rem 1.5rem;
+    height: 100%;
+}
+
+.inputs {
+    padding: 0 0.5rem;
+}
+
+label {
+    color: var(--Dark-grayish-cyan);
+    font-size: 1rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    color: var(--Very-dark-cyan);
+    background-repeat: no-repeat;
+    background-position: 7% 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: right;
+    font-family: Space Mono, Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+input:hover {
+    border: solid var(--Strong-cyan);
+    outline: none;
+}
+
+input:focus {
+    text-align: right;
+    border: solid var(--Strong-cyan);
+    outline: none;
+}
+
+.bill {
+    background-image: url(images/icon-dollar.svg);
+    margin-bottom: 1.5rem;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.8rem 0 1.5rem 0;
+    gap: 1rem;
+}
+
+button {
+    border: none;
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: Space Mono, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9FE8DF;
+    color: var(--Very-dark-cyan);
+}
+
+.custom {
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Dark-grayish-cyan);
+    text-align: right;
+    padding-right: 0.8rem;
+    letter-spacing: 0.03rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.zero {
+    font-size: 1rem;
+    color: #D97E6A;
+}
+
+.number-of-People {
+    background-image: url(./images/icon-person.svg);
+}
+
+.results {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 20px;
+    margin-top: 2.4rem;
+    padding: 1.45rem;
+}
+
+.sum {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.1rem;
+}
+
+.amount_text {
+    color: white;
+    font-size: 1rem;
+}
+
+.p_results {
+    font-size: 0.8rem;
+    opacity: 0.4;
+}
+
+.total_amount {
+    color: var(--Strong-cyan);
+    font-size: 2rem;
+}
+
+.reset {
+    background-color: var(--Strong-cyan);
+    width: 100%;
+    border-radius: 5px;
+    color: var(--Very-dark-cyan);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+    
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -59%);
+    }
+
+    .logo {
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+
+    form {
+        box-shadow: 0.2rem 1rem 65px -50px;
+        border-radius: 30px;
+        width: 57.5rem;
+        padding: 2rem 2rem;
+        display: flex;
+        position: relative;
+        top: 2rem;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    input {
+        background-position: 5% 50%;
+    }
+
+    .inputs {
+        width: 50%;
+        padding: 0.5rem 1rem;
+        margin-right: 1.7rem;
+    }
+
+    .bill {
+        margin-bottom: 2rem;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr  1fr  1fr;
+        gap: 0.8rem;
+        margin-bottom: 0rem;
+    }
+
+    button {
+        width: 7rem;
+    }
+    .custom {
+        width: 7rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .group {
+        margin-top: 1.2rem;
+    }
+
+    .results {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        padding: 2.5rem;
+        padding-bottom: 2.6rem;
+    }
+
+    .results_text {
+        padding-bottom: 4.5rem;
+    }
+
+    .sum {
+        padding-bottom: 0;
+    }
+
+    .sum--first {
+        padding-bottom: 0.5rem;
+    }
+
+    .total_amount {
+        font-size: 3rem;
+        position: relative;
+        bottom: 1rem;
+    }
+
+
+}

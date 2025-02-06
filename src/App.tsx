@@ -3,12 +3,14 @@ import Form from "./components/Form";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header className="App-header">
         <img src={logo} className="logo" alt="logo" />
       </header>
+      <div className="App">
       <Form />
     </div>
+    </>
   );
 }
 

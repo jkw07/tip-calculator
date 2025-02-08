@@ -1,5 +1,5 @@
 import logo from "./images/logo.svg";
-import Form from "./components/Form";
+import {Form} from "./components/Form";
 
 function App() {
   return (

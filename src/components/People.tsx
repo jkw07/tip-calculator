@@ -4,16 +4,14 @@ type PeopleProps = {
 };
 
 
-function People({people, handleChangePeople}: PeopleProps) {
+export const People = ({people, handleChangePeople}: PeopleProps) => {
     return (
         <>
         <div className="group">
-            <label htmlFor="number_of_people">Number of People</label>
+            <label htmlFor="peopleAmount">Number of People</label>
             {people === 0 ? <p className="zero"><b>Can't be zero</b></p> : null}
             </div>
-            <input className="number-of-people" type="number" id="number_of_people" name="people" min="1" value={people} required onChange={handleChangePeople}/>
+            <input className="number-of-people" type="number" id="peopleAmount" name="people" min="1" value={people} required onChange={handleChangePeople}/>
         </>
     );
 }
-
-export default People;

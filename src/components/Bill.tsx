@@ -3,7 +3,7 @@ type BillProps = {
     bill: number;
 };
 
-function Bill({ handleChangeBill, bill }: BillProps) {
+export const Bill = ({ handleChangeBill, bill }: BillProps) => {
     return (
         <>
             <label htmlFor="bill">Bill</label>
@@ -11,5 +11,3 @@ function Bill({ handleChangeBill, bill }: BillProps) {
         </>
     );
 }
-
-export default Bill;

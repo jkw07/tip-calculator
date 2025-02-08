@@ -6,9 +6,9 @@ type ResultProps = {
 };
 
 
-function Result({ bill, tip, people, handleReset }: ResultProps) {
-    const tipAmount: number = Math.round(bill * (tip / 100) / people);
-    const totalAmount: number = Math.round((bill + bill * (tip / 100)) / people);
+export const Result = ({ bill, tip, people, handleReset }: ResultProps) => {
+    const tipAmount: number = Math.round(bill * (tip / 100) / people * 100) / 100;
+    const totalAmount: number = Math.round((bill + bill * (tip / 100)) / people * 100) / 100;
     return (
         <div className="results">
             <div className="results_text">
@@ -31,5 +31,3 @@ function Result({ bill, tip, people, handleReset }: ResultProps) {
         </div>
     );
     }
-
-    export default Result;

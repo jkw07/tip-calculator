@@ -42,7 +42,7 @@ body {
     padding: 3.1rem 0 2.6rem 0;
 }
 
-form {
+.form {
     background-color: white;
     border-radius: 5% 5% 0 0;
     padding: 1.5rem 1.5rem;
@@ -187,7 +187,7 @@ button:hover {
         padding: 0;
     }
 
-    form {
+    .form {
         box-shadow: 0.2rem 1rem 65px -50px;
         border-radius: 30px;
         width: 57.5rem;

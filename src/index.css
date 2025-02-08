@@ -149,17 +149,17 @@ button:hover {
     margin-top: 1.1rem;
 }
 
-.amount_text {
+.amount-text {
     color: white;
     font-size: 1rem;
 }
 
-.p_results {
+.p-results {
     font-size: 0.8rem;
     opacity: 0.4;
 }
 
-.total_amount {
+.total-amount {
     color: var(--Strong-cyan);
     font-size: 2rem;
 }
@@ -244,7 +244,7 @@ button:hover {
         padding-bottom: 2.6rem;
     }
 
-    .results_text {
+    .results-text {
         padding-bottom: 4.5rem;
     }
 
@@ -252,11 +252,11 @@ button:hover {
         padding-bottom: 0;
     }
 
-    .sum--first {
+    .sum-first {
         padding-bottom: 0.5rem;
     }
 
-    .total_amount {
+    .total-amount {
         font-size: 3rem;
         position: relative;
         bottom: 1rem;
